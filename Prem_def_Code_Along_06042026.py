@@ -135,3 +135,4 @@ def guessing_game():
         else:
             print("Better luck next time!, Try Again")
 
+guessing_game()
