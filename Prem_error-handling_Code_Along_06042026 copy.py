@@ -19,6 +19,8 @@ movie_ticket_price()
 def student_score():
     try:
         score = int(input("Enter your score, students:"))
+        if score > 100:
+            raise ValueError("Kindly enter the score for 100.")
 
         if score < 40:
             print("Really sorry you didn't pass.")
@@ -78,6 +80,8 @@ def offer_discount():
             print("Soory! there is no Discount today.")
     except Exception as error:
         print("Error:",error)
+    finally:
+        print("Thank you visit agian...")
 
 offer_discount()
 
